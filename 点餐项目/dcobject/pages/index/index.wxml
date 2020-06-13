@@ -1,0 +1,102 @@
+<!-- 轮播 -->
+<view class="ppt">
+	<view class="page-section page-section-spacing swiper">
+		<swiper style="height:200px" indicator-dots="true" autoplay="true" circular="true" interval="3000" duration="500">
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt1.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt2.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt3.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="searchbox">
+		<input type="text" bindconfirm="fnsearch" placeholder="本店搜索" />
+	</view>
+</view>
+
+<!-- 功能模块 -->
+<view class="iconbox">
+	<view class="iconitem" hover-class="hovertag" bindtap="">
+		<image class="iconmk" src="/images/外卖.png" /><text>外卖</text>
+	</view>
+	<view class="iconitem" hover-class="hovertag">
+		<image class="iconmk" src="/images/点餐.png" /><text>点餐</text>
+	</view>
+</view>
+
+<!-- 首页foodlist -->
+<view class="foodbox">
+	<!-- foodlist head -->
+	<view class="head">
+		<image src="/images/jq.png"></image>
+		<text class="head-title1">精品推荐</text>
+		<text class="head-tiele2">本店招牌菜品</text>
+	</view>
+	<view class="foodlistbox">
+		<block wx:for="{{foodlist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="fooditem" hover-class="fooditemhover" data-id="{{item.id}}" data-foodname="回锅肉" bindtap="fngotofoodview">
+				<image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="scaleToFill" />
+				<text class="foodname">{{item.proname}}</text>
+				<text class="food"></text>
+				<text class="foodprice">￥{{item.price}}</text>
+			</view>
+		</block>
+	</view>
+</view>
+
+
+<!-- 底部轮播 -->
+<view class="ppt2">
+	<view class="page-section page-section-spacing swiper">
+		<swiper style="height:200px" autoplay="true" circular="true" interval="3000" duration="500">
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt1.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt2.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+			<swiper-item>
+				<view class="swiper-item">
+					<image src="../../images/ppt3.png" mode="widthFix" />
+				</view>
+			</swiper-item>
+		</swiper>
+	</view>
+</view>
+
+<!-- cookerlist -->
+<view class="cookerbox">
+	<view class="cookerhead">
+		<image src="/images/jq.png"></image>
+		<text class="cookerhead-title1">名厨推荐</text>
+		<text class="cookerhead-tiele2">八大菜系名厨</text>
+	</view>
+
+	<view class="cookerlistbox">
+		<block wx:for="{{cookerlist}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="cookeritem" hover-class="fooditemhover" data-id="{{item.id}}">
+				<image src="http://127.0.0.1:8000/static/upcookerimg/{{item.imgurl}}" bindtap="fngotocookerview" mode="widthFix" />
+				<text>{{item.cookernaem}}</text>
+				<image src="../../images/star.jpg" mode="widthFix" />
+			</view>
+		</block>
+	</view>
+
+
+
+
+</view>

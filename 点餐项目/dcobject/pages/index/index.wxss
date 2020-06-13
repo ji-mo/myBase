@@ -1,0 +1,233 @@
+/* pages/index/index.wxss */
+/* 轮播 */
+.ppt {
+  width: 100%;
+  position: relative;
+}
+
+.ppt image {
+  width: 100%;
+}
+/* 搜索框 */
+.searchbox {
+  width: calc(100% - 40rpx);
+  height: 90rpx;
+  border: solid 1px #eee;
+  position: absolute;
+  left: 20rpx;
+  bottom: -43px;
+  border-radius: 45rpx;
+  background-color: #fff;
+  z-index: 100;
+  box-shadow: 7px -2px 5px #8F8F8F;
+}
+
+.searchbox input {
+  height: 90rpx;
+  padding-left: 20rpx;
+  text-align: center;
+}
+
+/* 功能模块 */
+.iconbox {
+  width: 100%;
+  height: 135px;
+  /* display: flex; */
+  /*让外面的大盒子布局模式为弹性布局*/
+  /* padding-top: 120rpx; */
+}
+
+.iconitem{
+  /* flex: 1; */
+  width: 175px;
+  height:100px;
+  float: left;
+  margin-top: 65px;
+  margin-left: 20px;
+  background-color: rgb(247, 211, 9);
+  border-radius: 15px;
+  box-shadow: -2px 2px 5px #B8B8B8;
+}
+
+.iconmk {
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid #8F8F8F ; */
+  padding-top: 25px;
+  padding-left: 30px;
+  border-radius: 15px;
+  
+  /* background-color: rgb(254, 185, 37); */
+}
+
+.hovertag {
+  opacity: 0.8;
+  /*把不透明度设置为0.6*/
+}
+
+.iconbox text::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.iconitem text {
+  font-size: 20px;
+  margin-top: -45px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* float: right; */
+  align-items: center;
+  /* padding-left: 20px; */
+}
+
+/* 功能模块结束 */
+
+/* foodlist */
+
+
+.foodbox{
+  width: 100%;
+  margin-top: 50rpx;
+  height:850rpx;
+}
+
+.head{
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(rgb(217, 220, 220) , rgb(211, 211, 216));
+  margin-top: 60px;
+  display: block;
+}
+.head image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 5px;
+}
+.head-title1{
+  font-size: large;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 8%;
+}
+.head-tiele2{
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 28%;
+  color: rgb(89, 87, 87);
+}
+.foodlistbox{
+  padding-top:20rpx;
+  width: 100%;
+  height:750rpx;
+}
+
+.fooditem{
+  width:calc(50% - 20rpx);
+  height:360rpx;
+  float: left;
+  margin:10rpx;
+  border-radius: 8rpx;
+  overflow: hidden;
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.3);
+}
+
+.fooditemhover{
+  opacity: 0.6;/*不透明度调整为0.6*/
+}
+
+.fooditem image{
+  width: 100%;
+  height:220rpx;
+}
+.foodname{
+  font-weight: bold;
+  padding-left:10rpx;
+  padding-top: 10rpx;
+  display: block;
+}
+.foodprice{
+  display: block;
+  color: #E6706C;
+  padding-left:10rpx;
+  padding-top:10rpx;
+}
+
+/* 轮播2 */
+
+.ppt2 {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.ppt2 image {
+  width: 100%;
+}
+
+/* cookerlis */
+.cookerbox{
+  width: 100%;
+  margin-top: 50rpx;
+  height:850rpx;
+}
+.cookerhead{
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(rgb(217, 220, 220) , rgb(211, 211, 216));
+  margin-top: 1px;
+  display: block;
+}
+
+.cookerhead image{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 5px;
+}
+.cookerhead-title1{
+  font-size: large;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 8%;
+}
+.cookerhead-tiele2{
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 28%;
+  color: rgb(89, 87, 87);
+}
+
+
+.cookerlistbox{
+  width: 100%;
+  height: 370rpx;
+  display: flex;/*表示这个盒子布局的方式为弹性盒子布局*/
+}
+
+.cookeritem{
+  flex: 1;
+  border: solid 1rpx #ccc; 
+  margin:20rpx;
+  border-radius:8rpx;
+  overflow: hidden;/*超出容器的部分就隐藏*/
+  box-shadow: 0 0 20rpx 2rpx rgb(0, 0, 0,0.3);
+}
+
+.cookeritem image
+{
+  width: 100%;
+}
+
+.cookeritem text{
+  display: block;/*把行内元素转为块级元素 就可以对它设置宽高了*/
+  width: 100%;
+  text-align: center; /* 让文字在容器内居中 */
+}
+
+
