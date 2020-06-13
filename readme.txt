@@ -9,3 +9,5 @@
 9.cat ****     查看文件内容
 10.git restore -- ****     把****文件在工作区做的修改全部撤销
 11.rm ****    删除文件
+12.git remote add origin https://github.com/18515592159zhu/testgit.git    把本地仓库的内容推送到GitHub仓库
+13.git push -u origin master
