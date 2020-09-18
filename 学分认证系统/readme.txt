@@ -1,0 +1,2 @@
+CourseCredit为Eclipse运行的学分认证系统
+studentxs.sql文件为SQL数据库文件
