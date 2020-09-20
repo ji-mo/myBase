@@ -1,3 +1,4 @@
-抱团文件手机APP项目
-微信小程序
-学分认证系统为web项目
+Vue-tt-app是团团项目
+baotuan-app是手机APP项目
+weixin-app是微信小程序项目
+course是web学分认证系统项目
